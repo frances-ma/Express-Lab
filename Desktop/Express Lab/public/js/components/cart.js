@@ -4,7 +4,7 @@ console.log("cart component here!");
 const cart = {
     template: `
  <h1>I'm Just Going to the Store</h1> 
- <section class="list" ng-repeat="items in $ctrl.cart">
+ <section id="list" ng-repeat="items in $ctrl.cart">
     <input class="items" ng-blur="$ctrl.updateCart(items);" ng-model="items.product">
     <input class="items" ng-blur="$ctrl.updateCart(items);" ng-model="items.price">
     <input class="items" ng-blur="$ctrl.updateCart(items);" ng-model="items.quantity">
