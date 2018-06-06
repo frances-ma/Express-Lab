@@ -2,7 +2,7 @@
 console.log("cartService present!"); 
 
 function CartService($http) {
-    const getAllItems = () => {   // do not need to run .then again since this uses one router
+    const getAllItems = () => {  
         return $http({
           method: "GET", 
           url:"/options/cart"
@@ -31,7 +31,7 @@ function CartService($http) {
         return $http({
           method: "PUT", 
           url:"/options/cart/" + cart.id,
-          data: cart    // the new updated object "course"
+          data: cart    // the new updated object "cart"
         }); 
     }
 

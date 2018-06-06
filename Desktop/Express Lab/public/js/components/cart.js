@@ -52,4 +52,3 @@ angular
   .module("cartApp")
   .component("cart", cart);
 
-// <p>{{items.quantity}}</p>
