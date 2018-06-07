@@ -8,7 +8,7 @@ function CartService($http) {
           url:"/options/cart"
         }); 
     }; 
-
+    
     const addCart = (newCart) => {
         return $http({
           method: "POST", 
@@ -16,7 +16,7 @@ function CartService($http) {
           data: newCart
         }); 
       };
-
+  
     const deleteCart = (id) => {
         console.log(id); 
         console.log(typeof id); 
@@ -26,6 +26,7 @@ function CartService($http) {
         });
     };
 
+    
     const updateCart = (cart) => {
         console.log(cart); 
         return $http({
@@ -33,7 +34,7 @@ function CartService($http) {
           url:"/options/cart/" + cart.id,
           data: cart    // the new updated object "cart"
         }); 
-    }
+    };
 
 
     return{

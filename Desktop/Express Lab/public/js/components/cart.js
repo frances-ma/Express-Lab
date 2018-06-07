@@ -31,17 +31,17 @@ const cart = {
             vm.newCart = {}; 
         };
 
-        vm.deleteCart = (id) => {
-            CartService.deleteCart(id).then((response) => {
-                vm.cart = response.data; 
-            }); 
-        };
+         vm.deleteCart = (id) => {
+             CartService.deleteCart(id).then((response) => {
+                 vm.cart = response.data; 
+             }); 
+         };
 
-        vm.updateCart = (cart) => {
-            CartService.updateCart(cart).then((response) => {
-                vm.cart = response.data; 
-            }); 
-        };
+         vm.updateCart = (cart) => {
+             CartService.updateCart(cart).then((response) => {
+                 vm.cart = response.data; 
+             }); 
+         };
     }]
 
 };
