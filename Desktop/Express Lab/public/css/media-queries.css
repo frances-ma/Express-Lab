@@ -7,7 +7,6 @@
 }
 
 
-
 @media screen and (min-width: 600px) {
 
     body {
@@ -27,7 +26,6 @@
         clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100% ); 
     }
 
-
     .new {
         display: flex; 
         justify-content: center; 
@@ -44,3 +42,4 @@
     }
 
 }
+

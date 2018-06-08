@@ -10,7 +10,7 @@ const cart = {
     <label>Price</label>
     <input class="items" ng-blur="$ctrl.updateCart(items);" ng-model="items.price">
     <label>Quantity</label>
-    <input class="items" ng-blur="$ctrl.updateCart(items);" ng-model="items.quantity">
+    <input class="items" type="number" ng-blur="$ctrl.updateCart(items);" ng-model="items.quantity">
     <button class="delete" ng-click="$ctrl.deleteCart(items.id);">Delete</button>
   </section> 
   <form class="form" ng-submit="$ctrl.addCart($ctrl.newCart);">
@@ -59,4 +59,6 @@ angular
     <i class="material-icons" ng-click="$ctrl.deleteCart(items.id);">
     cancel
     </i>
+
+    <input class="items" ng-blur="$ctrl.updateCart(items);" ng-model="items.quantity">
 */
