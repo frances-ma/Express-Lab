@@ -1,0 +1,46 @@
+
+@media screen and (min-width: 360px) {
+    h1{
+        font-size: 29px;
+        margin: 9px;
+    }
+}
+
+
+
+@media screen and (min-width: 600px) {
+
+    body {
+        width: 100%; 
+        display: flex;
+        flex-direction: column;    
+        align-items: center; 
+        justify-content: center; 
+        padding: 30px; 
+    }
+
+    h1{
+        font-size: 54px; 
+    }
+    
+    #list {
+        clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100% ); 
+    }
+
+
+    .new {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        border-radius: 5px; 
+        padding: 10px; 
+        margin: 5px; 
+        outline-color: #D195C5;
+    } 
+
+    .add {
+        width: 100%; 
+        padding: 12px;
+    }
+
+}

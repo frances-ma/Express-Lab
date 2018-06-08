@@ -5,8 +5,11 @@ const cart = {
     template: `
  <h1>I'm Just Going to the Store</h1> 
  <section id="list" ng-repeat="items in $ctrl.cart">
+    <label>Item</label>
     <input class="items" ng-blur="$ctrl.updateCart(items);" ng-model="items.product">
+    <label>Price</label>
     <input class="items" ng-blur="$ctrl.updateCart(items);" ng-model="items.price">
+    <label>Quantity</label>
     <input class="items" ng-blur="$ctrl.updateCart(items);" ng-model="items.quantity">
     <button class="delete" ng-click="$ctrl.deleteCart(items.id);">Delete</button>
   </section> 
@@ -14,7 +17,7 @@ const cart = {
     <input class="new" type="text" placeholder="Product" ng-model="$ctrl.newCart.product">
     <input class="new" type="text" placeholder="Price" ng-model="$ctrl.newCart.price">
     <input class="new" type="text" placeholder="Quantity" ng-model="$ctrl.newCart.quantity">
-    <button class="add"> Add To Cart </button> 
+    <button class="add"> Add To Cart </button>
   </form>
     `, 
 
@@ -52,3 +55,8 @@ angular
   .module("cartApp")
   .component("cart", cart);
 
+/*
+    <i class="material-icons" ng-click="$ctrl.deleteCart(items.id);">
+    cancel
+    </i>
+*/
