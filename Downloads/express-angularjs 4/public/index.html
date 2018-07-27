@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="GCApp" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Express Demo</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <nav>
+    <a href="#!/students">Students</a>
+    <a href="#!/teachers">Teachers</a>
+    <a href="#!/courses">Courses</a>
+  </nav>
+
+  <ng-view></ng-view>
+
+  <script src="https://code.angularjs.org/1.6.5/angular.min.js"></script>
+  <script src="https://code.angularjs.org/1.6.5/angular-route.min.js"></script>
+  <script src="js/module/module.js"></script>
+  <script src="js/config/config.js"></script>
+  <script src="js/components/courses.js"></script>
+  <script src="js/components/teachers.js"></script>
+  <script src="js/components/students.js"></script>
+  <script src="js/services/course-service.js"></script>
+  <script src="js/services/teacher-service.js"></script>
+  <script src="js/services/student-service.js"></script>
+</body>
+</html>
